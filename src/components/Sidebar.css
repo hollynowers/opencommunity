@@ -5,8 +5,8 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
-    background-color: #f0f0f0;
+    width: 130px;
+    background-color: #f7f6f6;
     padding: 20px;
     transition: transform 0.3s ease;
   }
@@ -18,10 +18,13 @@
   .toggle-btn {
     position: fixed;
     top: 620px;
-    left: 255px; /* Adjusted left position */
+    left: 12px; /* Adjusted left position */
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
+    z-index: 999; /* Ensure it's above other elements */
   }
+
+  
   
