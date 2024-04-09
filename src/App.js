@@ -9,8 +9,14 @@ import React, { useState, useEffect } from "react";
 function App() {
   return (
     <div classname="App">
+
       <Register />
     </div>
+=======
+    {/* <Sidebar /> */}
+ {/* Hey there, Modjadji changed something :) */}
+   </div>
+
   );
 }
 
