@@ -12,10 +12,6 @@ function App() {
 
       <Register />
     </div>
-=======
-    {/* <Sidebar /> */}
- {/* Hey there, Modjadji changed something :) */}
-   </div>
 
   );
 }
