@@ -12,6 +12,7 @@ function Register() {
   useEffect(() => {}, []);
   return (
     <div>
+      <div style={{ marginTop: "-700px" }}></div>
       <section className="bg-gray-50 dark:bg-gray-900" style={{ marginTop: 0 }}>
         <center>
           <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
