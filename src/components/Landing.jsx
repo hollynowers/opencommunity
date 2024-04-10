@@ -1,28 +1,34 @@
 import React, { useState } from "react";
-import "./Landing.css"; // Assuming your CSS file is named styles.css
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Landing from "./Landing";
+import Login from "./Login";
+import "./Landing.css";
+import Register from "./Register"
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
-  const handleLogin = () => {
-    // Logic for handling login
-    setLoggedIn(true);
-  };
-
-  const handleRegister = () => {
-    // Logic for handling registration
-    console.log("Register clicked");
+  const handleLoginButtonClick = () => {
+    setShowLogin(true);
   };
 
   return (
-    <div className="container">
-      <div className="form">
-        <div className="btn-container">
-          <button className="btn" onClick={handleLogin}>Login</button>
-          <button className="btn" onClick={handleRegister}>Register</button>
+    <Router>
+      <div className="container">
+        <div className="form">
+          {!showLogin && (
+            <div className="btn-container">
+              <button className="btn" onClick={handleLoginButtonClick}>
+                Login
+              </button>
+              <button className="btn">Register</button>
+            </div>
+          )}
         </div>
       </div>
-    </div>
+
+      {showLogin && <Login />}
+    </Router>
   );
 }
 
