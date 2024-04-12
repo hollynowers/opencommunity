@@ -1,4 +1,9 @@
-import logo from "./logo.svg";
+
+import logo from './logo.svg';
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import './App.css';
+
 
 import Sidebar from "./components/Sidebar";
 import "./App.css";
