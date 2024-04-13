@@ -3,8 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Adjust the height as needed */
+    margin-top: -700px; /* Adjust the margin-top to move it further up */
 }
+
 
 .login-form {
     background-color: #f9f9f9;
