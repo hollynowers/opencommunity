@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
+import RegiserAccountDetails from "./RegisterDetails"; //next part of the registration
 
 function Register() {
   const [name, setName] = useState(null);
@@ -12,6 +13,7 @@ function Register() {
 
   useEffect(() => {}, []);
   return (
+
     <div>
       <div style={{ marginTop: "-700px" }}></div>
       <section className="bg-gray-50 dark:bg-gray-900" style={{ marginTop: 0 }}>
@@ -160,6 +162,10 @@ function Register() {
                   Register
                 </button>
               </form>
+              {/* This button takes the user to the page where they enter registration details */}
+              <button> 
+                Next 
+              </button>
             </div>
           </div>
         </div>
