@@ -1,6 +1,7 @@
 //This is a continuation of the register page, where users enter their account details
 
 'use client'
+import {useState} from 'react'
 import React from 'react'
 import {BrowserRouter as Router} from 'react-router-dom'
 
